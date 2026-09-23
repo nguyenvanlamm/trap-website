@@ -13,6 +13,8 @@
   <link rel="alternate" hreflang="x-default" href="https://luongnv.com/trap-website/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Trap / Cạm Bẫy">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="vi_VN">
   <meta property="og:title" content="Trap — The factory only fools you once.">
   <meta property="og:description" content="A hidden-trap platformer about a small robot escaping a scrap factory.">
   <meta property="og:url" content="https://luongnv.com/trap-website/">
@@ -29,19 +31,55 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "VideoGame",
-    "@id": "https://luongnv.com/trap-website/#game",
-    "name": "Trap",
-    "alternateName": "Cạm Bẫy",
-    "description": "A hidden-trap platformer about a small robot escaping a scrap factory. Traps reveal themselves through play, while Scan and EMP turn batteries into a margin for error.",
-    "url": "https://luongnv.com/trap-website/",
-    "image": "https://luongnv.com/trap-website/assets/social-card.png",
-    "genre": ["Platformer", "Puzzle"],
-    "gamePlatform": ["Android", "iOS"],
-    "operatingSystem": ["Android", "iOS"],
-    "applicationCategory": "Game",
-    "inLanguage": ["en", "vi"],
-    "sameAs": "https://github.com/nguyenvanlamm/cam_bay"
+    "@graph": [
+      {
+        "@type": "VideoGame",
+        "@id": "https://luongnv.com/trap-website/#game",
+        "name": "Trap",
+        "alternateName": "Cạm Bẫy",
+        "description": "A hidden-trap platformer about a small robot escaping a scrap factory. Traps reveal themselves through play, while Scan and EMP turn batteries into a margin for error.",
+        "url": "https://luongnv.com/trap-website/",
+        "image": "https://luongnv.com/trap-website/assets/social-card.png",
+        "genre": ["Platformer", "Puzzle"],
+        "gamePlatform": ["Android", "iOS"],
+        "operatingSystem": ["Android", "iOS"],
+        "applicationCategory": "Game",
+        "inLanguage": ["en", "vi"],
+        "sameAs": "https://github.com/nguyenvanlamm/cam_bay"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://luongnv.com/trap-website/#faq",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Trap?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Trap is a hidden-trap platformer about a small robot escaping a scrap factory. The room is designed to surprise you once, then reward you for remembering."}
+          },
+          {
+            "@type": "Question",
+            "name": "How much game is there?",
+            "acceptedAnswer": {"@type": "Answer", "text": "The current design has 12 levels across three acts: Scrap Yard, Maintenance Halls and The Grinder. There are 13 trap types and three challenge goals per level."}
+          },
+          {
+            "@type": "Question",
+            "name": "What happens when a trap gets me?",
+            "acceptedAnswer": {"@type": "Answer", "text": "You respawn at the last checkpoint you touched. A trap that has fired leaves a faint mark where it hid, and that discovery survives death."}
+          },
+          {
+            "@type": "Question",
+            "name": "When should I use Scan or EMP?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Scan costs one battery and reveals hidden traps within 5.5 cells. EMP costs two and freezes nearby mechanisms for 2.6 seconds. Passive geometry—like an exposed spike bed—stays dangerous."}
+          },
+          {
+            "@type": "Question",
+            "name": "When can I play?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Trap is in development. It is planned for Android and iOS, with both the Google Play and Apple App Store releases marked coming soon. No release date has been announced."}
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>

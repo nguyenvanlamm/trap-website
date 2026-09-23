@@ -1,11 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://luongnv.com/trap-website/</loc></url>
-  <url><loc>https://luongnv.com/trap-website/vi/</loc></url>
-  <url><loc>https://luongnv.com/trap-website/support/</loc></url>
-  <url><loc>https://luongnv.com/trap-website/vi/support/</loc></url>
-  <url><loc>https://luongnv.com/trap-website/privacy/</loc></url>
-  <url><loc>https://luongnv.com/trap-website/vi/privacy/</loc></url>
-  <url><loc>https://luongnv.com/trap-website/changelog/</loc></url>
-  <url><loc>https://luongnv.com/trap-website/vi/changelog/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://luongnv.com/trap-website/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://luongnv.com/trap-website/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://luongnv.com/trap-website/vi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luongnv.com/trap-website/"/>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://luongnv.com/trap-website/vi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://luongnv.com/trap-website/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://luongnv.com/trap-website/vi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luongnv.com/trap-website/"/>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://luongnv.com/trap-website/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://luongnv.com/trap-website/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://luongnv.com/trap-website/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luongnv.com/trap-website/support/"/>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://luongnv.com/trap-website/vi/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://luongnv.com/trap-website/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://luongnv.com/trap-website/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luongnv.com/trap-website/support/"/>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://luongnv.com/trap-website/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://luongnv.com/trap-website/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://luongnv.com/trap-website/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luongnv.com/trap-website/privacy/"/>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://luongnv.com/trap-website/vi/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://luongnv.com/trap-website/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://luongnv.com/trap-website/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luongnv.com/trap-website/privacy/"/>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://luongnv.com/trap-website/changelog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://luongnv.com/trap-website/changelog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://luongnv.com/trap-website/vi/changelog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luongnv.com/trap-website/changelog/"/>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://luongnv.com/trap-website/vi/changelog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://luongnv.com/trap-website/changelog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://luongnv.com/trap-website/vi/changelog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luongnv.com/trap-website/changelog/"/>
+    <lastmod>2026-09-22</lastmod>
+  </url>
 </urlset>

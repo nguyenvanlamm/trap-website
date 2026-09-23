@@ -13,6 +13,8 @@
   <link rel="alternate" hreflang="x-default" href="https://luongnv.com/trap-website/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Trap / Cạm Bẫy">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:locale:alternate" content="en_US">
   <meta property="og:title" content="Trap — Nhà máy chỉ đánh lừa bạn một lần.">
   <meta property="og:description" content="Game platformer bẫy ẩn về một robot nhỏ tìm đường thoát khỏi nhà máy phế liệu.">
   <meta property="og:url" content="https://luongnv.com/trap-website/vi/">
@@ -29,19 +31,55 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "VideoGame",
-    "@id": "https://luongnv.com/trap-website/#game",
-    "name": "Trap",
-    "alternateName": "Cạm Bẫy",
-    "description": "Game platformer bẫy ẩn về một robot nhỏ tìm đường thoát khỏi nhà máy phế liệu. Bẫy lộ ra qua trải nghiệm, còn Scan và EMP biến pin thành khoảng thở.",
-    "url": "https://luongnv.com/trap-website/vi/",
-    "image": "https://luongnv.com/trap-website/assets/social-card.png",
-    "genre": ["Platformer", "Puzzle"],
-    "gamePlatform": ["Android", "iOS"],
-    "operatingSystem": ["Android", "iOS"],
-    "applicationCategory": "Game",
-    "inLanguage": ["en", "vi"],
-    "sameAs": "https://github.com/nguyenvanlamm/cam_bay"
+    "@graph": [
+      {
+        "@type": "VideoGame",
+        "@id": "https://luongnv.com/trap-website/#game",
+        "name": "Trap",
+        "alternateName": "Cạm Bẫy",
+        "description": "Game platformer bẫy ẩn về một robot nhỏ tìm đường thoát khỏi nhà máy phế liệu. Bẫy lộ ra qua trải nghiệm, còn Scan và EMP biến pin thành khoảng thở.",
+        "url": "https://luongnv.com/trap-website/vi/",
+        "image": "https://luongnv.com/trap-website/assets/social-card.png",
+        "genre": ["Platformer", "Puzzle"],
+        "gamePlatform": ["Android", "iOS"],
+        "operatingSystem": ["Android", "iOS"],
+        "applicationCategory": "Game",
+        "inLanguage": ["en", "vi"],
+        "sameAs": "https://github.com/nguyenvanlamm/cam_bay"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://luongnv.com/trap-website/vi/#faq",
+        "inLanguage": "vi",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Trap là gì?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Trap là game platformer bẫy ẩn về một robot nhỏ tìm đường thoát khỏi nhà máy phế liệu. Căn phòng được thiết kế để bất ngờ bạn một lần, rồi thưởng cho khả năng ghi nhớ."}
+          },
+          {
+            "@type": "Question",
+            "name": "Game có bao nhiêu nội dung?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Thiết kế hiện tại có 12 màn qua ba hồi: Bãi phế liệu, Hành lang bảo trì và Máy nghiền. Có 13 loại bẫy cùng ba mục tiêu thử thách ở mỗi màn."}
+          },
+          {
+            "@type": "Question",
+            "name": "Điều gì xảy ra khi tôi dính bẫy?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Bạn hồi sinh tại checkpoint gần nhất đã chạm. Bẫy từng ra tay để lại dấu mờ ở nơi nó ẩn nấp, và phát hiện đó tồn tại sau cái chết."}
+          },
+          {
+            "@type": "Question",
+            "name": "Khi nào nên dùng Scan hoặc EMP?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Scan tốn một pin và lộ bẫy ẩn trong 5,5 ô. EMP tốn hai pin và đóng băng cơ chế gần đó trong 2,6 giây. Địa hình thụ động—như bãi gai lộ thiên—vẫn nguy hiểm."}
+          },
+          {
+            "@type": "Question",
+            "name": "Khi nào có thể chơi?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Trap đang được phát triển. Game dự kiến có trên Android và iOS; cả Google Play lẫn Apple App Store đều đang ở trạng thái sắp có. Chưa công bố ngày phát hành."}
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>

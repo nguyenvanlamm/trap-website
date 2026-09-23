@@ -93,14 +93,30 @@ for (const page of pages) {
   if (jsonScripts.length === 1) {
     try {
       const data = JSON.parse(jsonScripts[0][1]);
-      check(data['@type'] === page.type, `${page.file}: JSON-LD must be ${page.type}`);
-      check(data.url === page.canonical, `${page.file}: JSON-LD URL must match canonical`);
-      if (page.type === 'VideoGame') {
-        check(Array.isArray(data.gamePlatform) && data.gamePlatform.includes('Android') && data.gamePlatform.includes('iOS'), `${page.file}: JSON-LD planned platforms must include Android and iOS`);
-      } else {
-        check(data.inLanguage === page.lang, `${page.file}: WebPage JSON-LD language must match HTML`);
+      const nodes = Array.isArray(data['@graph']) ? data['@graph'] : [data];
+      const primary = nodes.find((node) => node['@type'] === page.type);
+      check(primary, `${page.file}: JSON-LD must include ${page.type}`);
+      if (primary) {
+        check(primary.url === page.canonical, `${page.file}: JSON-LD URL must match canonical`);
+        if (page.type === 'VideoGame') {
+          check(Array.isArray(primary.gamePlatform) && primary.gamePlatform.includes('Android') && primary.gamePlatform.includes('iOS'), `${page.file}: JSON-LD planned platforms must include Android and iOS`);
+        } else {
+          check(primary.inLanguage === page.lang, `${page.file}: WebPage JSON-LD language must match HTML`);
+        }
       }
-      check(!('offers' in data) && !('aggregateRating' in data) && !('review' in data), `${page.file}: JSON-LD must not invent offers, ratings, or reviews`);
+      for (const node of nodes) {
+        check(!('offers' in node) && !('aggregateRating' in node) && !('review' in node), `${page.file}: JSON-LD must not invent offers, ratings, or reviews`);
+      }
+      if (page.faqCount !== undefined) {
+        const faq = nodes.find((node) => node['@type'] === 'FAQPage');
+        check(faq && Array.isArray(faq.mainEntity) && faq.mainEntity.length === page.faqCount, `${page.file}: FAQPage JSON-LD must list exactly ${page.faqCount} questions`);
+        if (faq && Array.isArray(faq.mainEntity)) {
+          const summaries = [...html.matchAll(/<summary><span>([^<]+)<\/span>/g)].map((match) => match[1]);
+          faq.mainEntity.forEach((entity, index) => {
+            check(entity.name === summaries[index], `${page.file}: FAQPage question ${index + 1} does not match the visible summary`);
+          });
+        }
+      }
     } catch (error) {
       errors.push(`${page.file}: JSON-LD is not valid JSON (${error.message})`);
     }
